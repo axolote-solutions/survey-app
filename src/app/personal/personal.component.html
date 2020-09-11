@@ -1,0 +1,88 @@
+<div ngModelGroup="{{modelGroupName}}">
+
+    <div>este es el encabezado uno</div>
+
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field fxFlex="45">
+            <input matInput placeholder="Nombres" name="firstName" required ngModel >
+        </mat-form-field>
+        <mat-form-field fxFlex="45">
+            <input matInput placeholder="Apellidos" name="lastName" required ngModel >
+        </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field fxFlex="20">
+            <mat-label>Sexo </mat-label>
+            <mat-select name="gender" required ngModel>
+                <mat-option value="Female">Femenino</mat-option>
+                <mat-option value="Male">Masculino</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field fxFlex="20">
+            <mat-label>Edad</mat-label>
+            <mat-select name="age" required ngModel>
+                <mat-option value="18">18</mat-option>
+                <mat-option value="19">19</mat-option>
+                <mat-option value="20">20</mat-option>
+                <mat-option value="21">21</mat-option>
+                <mat-option value="22">22</mat-option>
+                <mat-option value="23">23</mat-option>
+                <mat-option value="24">24</mat-option>
+                <mat-option value="25">25</mat-option>
+                <mat-option value="26">26</mat-option>
+                <mat-option value="27">27</mat-option>
+                <mat-option value="28">28</mat-option>
+                <mat-option value="29">29</mat-option>
+                <mat-option value="30">30</mat-option>
+                <mat-option value="31">31</mat-option>
+                <mat-option value="32">32</mat-option>
+                <mat-option value="33">33</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </div>
+
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field fxFlex="20">
+            <mat-label>Area </mat-label>
+            <mat-select name="area" required ngModel>
+                <mat-option value="finance">Finanzas</mat-option>
+                <mat-option value="hr">RH</mat-option>
+                <mat-option value="it">TI</mat-option>
+                <mat-option value="supply_chain">Supply chain</mat-option>
+                <mat-option value="operations">Operaciones</mat-option>
+                <mat-option value="legal">Legal</mat-option>
+                <mat-option value="sales">Comercial/Ventas</mat-option>
+                <mat-option value="admin">Administración</mat-option>
+                <mat-option value="other">Otro</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field fxFlex="20">
+            <mat-label>Nivel Jerarquico</mat-label>
+            <mat-select name="hierarchy" required ngModel>
+                <mat-option value="comite">Comité Directivo</mat-option>
+                <mat-option value="subdirection">Subdirección</mat-option>
+                <mat-option value="management">Geréncia</mat-option>
+                <mat-option value="headship">Jefatura</mat-option>
+                <mat-option value="operative">Operativo</mat-option>
+                <mat-option value="Other">Otro</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </div>
+
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field fxFlex="45">
+            <input matInput placeholder="Correo electrónico institucional" name="workEmail" required ngModel >
+        </mat-form-field>
+        <mat-form-field fxFlex="45">
+            <input matInput placeholder="Correo electrónico personal" name="personalEmail" required ngModel >
+        </mat-form-field>
+    </div>
+
+    <div>
+        <button mat-button matStepperNext>Next</button>
+    </div>
+
+</div>
