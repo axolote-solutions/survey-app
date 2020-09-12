@@ -1,0 +1,36 @@
+<div fxLayout="column wrap" fxLayout.sm="column wrap">
+    <mat-card class="subheader" fxFlex.gt-sm= "15" fxFlex.sm= "1">
+        Salud Ocupacional y Riesgos COVID-19
+    </mat-card>
+    <mat-card fxFlex>
+        
+    
+        <mat-card-content>
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <mat-vertical-stepper linear #stepper labelPosition="top">
+                    <mat-step #personal="ngModelGroup" ngModelGroup="personal" [completed]="personal.valid">
+                        <ng-template matStepLabel>Personal</ng-template>
+                        <app-personal modelGroupName="contact"></app-personal>
+                    </mat-step>
+                    <mat-step #health="ngModelGroup" ngModelGroup="health" [completed]="health.valid">
+                        <ng-template matStepLabel>gad</ng-template>
+                        <app-gad modelGroupName="gad"></app-gad>
+                    </mat-step>
+                    <mat-step #habits="ngModelGroup" ngModelGroup="habits" [completed]="habits.valid">
+                        <ng-template matStepLabel>habitos</ng-template>
+                        <app-habits modelGroupName="habitos"></app-habits>
+                    </mat-step>
+                    <mat-step>
+                        <ng-template matStepLabel>Finalizar</ng-template>
+                        <p>Gracias por sus respuestas!</p>
+                        <div>
+                          <button class="btn btn-info" mat-raised-button type="button" (click)="onClick(f)" [routerLink]="['/home']" routerLinkActive="active">Finalizar</button>
+                        </div>
+                      </mat-step>
+                </mat-vertical-stepper>
+            </form>
+            <!-- <pre>{{ f.value | json }}</pre> -->
+        </mat-card-content>
+    
+    </mat-card>
+    </div>

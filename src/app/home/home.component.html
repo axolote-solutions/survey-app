@@ -1,27 +1,40 @@
-<mat-card>
-    <mat-card-header>
-        <mat-card-title> Salud Ocupacional y Riesgos COVID-19 </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-    <div >
-        <div >
-            <p>
-                La información que nos proporcione será confidencial, con el propósito de analizar patrones grupales, y no de carácter personal. Los resultados finales se usarán con fines científicos para proponer acciones de mejora para cuidar su salud física, mental y emocional en el ámbito laboral.
-            </p>
-            <hr>
-            <p>
-                Todas las preguntas que se muestran a continuación son de carácter obligatorio.
-            </p>
-            <hr>
-            <p>
-                Al finalizar asegúrate de dar click en ENVIAR, de lo contrario tendrás que volver a responder el cuestionario.
-            </p>
-        </div>
-        <button class="begin-button" [routerLink]="['surveyResponse']" routerLinkActive="active">
-            Empezar
-        </button>
-    </div>
-    </mat-card-content>
-</mat-card>
+<!-- <div class="subheader">
+    <mat-card class="subheader">
+         Salud Ocupacional y Riesgos COVID-19 
+    </mat-card>
+</div> -->
+<!-- <div fxLayout="row wrap" fxLayout.sm="column"
+    fxLayoutAlign="center"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0"> -->
+    
+    <mat-card fxFlex.gt-sm= "15" fxFlex.sm= "1"></mat-card>
+    
+    <mat-card fxFlex>
+        <mat-card class="subheader">
+            Salud Ocupacional y Riesgos COVID-19
+        </mat-card>
+        <mat-card-content>
+            <div >
+                <div >
+                    <p>
+                        La información que nos proporcione será confidencial, con el propósito de analizar patrones grupales, y no de carácter personal. Los resultados finales se usarán con fines científicos para proponer acciones de mejora para cuidar su salud física, mental y emocional en el ámbito laboral.
+                    </p>
+                    <hr>
+                    <p>
+                        Todas las preguntas que se muestran a continuación son de carácter obligatorio.
+                    </p>
+                    <hr>
+                    <p>
+                        Al finalizar asegúrate de dar click en ENVIAR, de lo contrario tendrás que volver a responder el cuestionario.
+                    </p>
+                </div>
+                <button type="button" class="btn btn-info" [routerLink]="['surveyResponse']" routerLinkActive="active">
+                    Empezar
+                </button>
+            </div>
+        </mat-card-content>
+    </mat-card>
 
-
+    <mat-card fxFlex.gt-sm= "15" fxFlex.sm= "1"></mat-card>
+<!-- </div> -->

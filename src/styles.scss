@@ -1,7 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+body {
+  font-family: Nunito Sans,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #eef5f9;
+    margin: 0;
+    overflow-x: hidden;
+    color: #3e5569;
+    background: #eef5f9;
+}
 
 .example-radio-group {
   display: flex;
@@ -12,3 +24,98 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .example-radio-button {
   margin: 5px;
 }
+
+.bg-success {
+  background-color: #36bea6!important;
+}
+
+.header {
+  color: #212529;
+  background-color: #00a085;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.subheader {
+  background-color: #24d2b5;
+  color: #000000;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.badge-info {
+  color: #fff;
+  background-color: #20aee3;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #67757c;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #20aee3;
+  border-color: #20aee3;
+}
+
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: #20aee3;
+  color: #fff;
+}
+
+
+/* .container{
+  margin: 15px;
+  height:200px;
+  border:2px solid red;
+ }
+
+.container { // for desktop & tablet
+  display: flex;
+  flex-flow: row wrap;
+} */
+
+/* .container div {
+  width: 75%
+}
+
+@media for middle { // for tablet (mid)
+  .container div {
+      width: 50%
+  }
+}
+
+@media for mobile { //for mobile
+  .container {
+      flex-direction: column;
+  }
+
+  .container div {
+      width: 100%
+  }
+}
+ */
+
+/* 
+mat-card {
+  border:2px solid greenyellow;
+} */

@@ -22,6 +22,8 @@ import { FormsModule } from '@angular/forms';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
 import { HabitsComponent } from './habits/habits.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { VerticalComponent } from './vertical/vertical.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { HabitsComponent } from './habits/habits.component';
     SurveyResponseComponent,
     PersonalComponent,
     GadComponent,
-    HabitsComponent
+    HabitsComponent,
+    VerticalComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { HabitsComponent } from './habits/habits.component';
     MatCardModule,
     FormsModule,
     MatStepperModule,
-    MatTabsModule
+    MatTabsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent],
