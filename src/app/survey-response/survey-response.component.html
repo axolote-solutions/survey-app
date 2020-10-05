@@ -1,10 +1,11 @@
-<div fxLayout="column wrap" fxLayout.sm="column wrap">
-<mat-card class="subheader" fxFlex.gt-sm= "15" fxFlex.sm= "1">
-    Salud Ocupacional y Riesgos COVID-19
-</mat-card>
-<mat-card fxFlex>
+<div fxLayout="column wrap" fxLayout.sm="column wrap" class="navbar">
     
-
+<mat-card class="subheader"> <!--fxFlex.gt-sm= "15" fxFlex.sm= "1"-->
+    <img [src]="logoImg" class="logo">
+    Por tu corazón 
+</mat-card>
+<mat-card fxFlex class="bar-progress">
+    
     <mat-card-content>
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
             <mat-horizontal-stepper linear #stepper labelPosition="top">
@@ -13,11 +14,11 @@
                     <app-personal modelGroupName="contact"></app-personal>
                 </mat-step>
                 <mat-step #health="ngModelGroup" ngModelGroup="health" [completed]="health.valid">
-                    <ng-template matStepLabel>gad</ng-template>
+                    <ng-template matStepLabel>GAD</ng-template>
                     <app-gad modelGroupName="gad"></app-gad>
                 </mat-step>
                 <mat-step #habits="ngModelGroup" ngModelGroup="habits" [completed]="habits.valid">
-                    <ng-template matStepLabel>habitos</ng-template>
+                    <ng-template matStepLabel>Habitos</ng-template>
                     <app-habits modelGroupName="habitos"></app-habits>
                 </mat-step>
                 <mat-step>

@@ -25,4 +25,6 @@ export class SurveyResponseComponent implements OnInit {
 
   }
 
+  logoImg = "./assets/images/porTuCorazon.jpg";
+
 }

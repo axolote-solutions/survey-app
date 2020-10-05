@@ -1,27 +1,25 @@
-<div ngModelGroup="{{modelGroupName}}">
+<div ngModelGroup="{{modelGroupName}}" class="section">
 
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div class="question"> <!--fxLayout="column" fxLayoutGap="20px"-->
         <label>Sentirse nervioso(a), ansioso(a), o con los nervios de punta</label>
         <mat-radio-group class="example-radio-group" name="nervious" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
                 {{answer}}
             </mat-radio-button>
         </mat-radio-group>
-        
     </div>
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div class="question">
         <label> No poder dejar de preocuparse o no poder controlar la preocupación</label>
         <mat-radio-group class="example-radio-group" name="preocupy" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
                 {{answer}}
             </mat-radio-button>
         </mat-radio-group>
-        
     </div>
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div class="question">
         <label>Preocuparse demasiado por diferentes cosas</label>
         <mat-radio-group class="example-radio-group" name="preocuparseDemasiado" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
@@ -31,7 +29,7 @@
         
     </div>
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div class="question">
         <label>Dificultad para relajarse</label>
         <mat-radio-group class="example-radio-group" name="hardRelax" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
@@ -41,7 +39,7 @@
         
     </div>
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div class="question">
         <label>Estar tan inquieto(a) que es difícil permanecer sentado(a) tranquilamente</label>
         <mat-radio-group class="example-radio-group" name="inquieto" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
@@ -51,7 +49,7 @@
         
     </div>
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div  class="question">
         <label>Molestarse o ponerse irritable fácilmente</label>
         <mat-radio-group class="example-radio-group" name="irritable" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
@@ -61,7 +59,7 @@
         
     </div>
 
-    <div fxLayout="column" fxLayoutGap="20px">
+    <div class="question">
         <label>Sentir miedo como si algo terrible pudiese pasa</label>
         <mat-radio-group class="example-radio-group" name="fear" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
@@ -71,9 +69,17 @@
         
     </div>
 
-    <div>
-        <button class="btn btn-info" mat-button matStepperPrevious>Back</button>
+    <div class="btns">
+        <button class="btn btn-info btn-left" mat-button matStepperPrevious>
+            <span class="material-icons">
+                arrow_back_ios
+            </span>
+        </button>
         &nbsp;&nbsp;&nbsp;
-        <button class="btn btn-info" mat-button matStepperNext>Next</button>
+        <button class="btn btn-info btn-right" mat-button matStepperNext>
+            <span class="material-icons">
+                arrow_forward_ios
+            </span> 
+        </button>
     </div>
 </div>

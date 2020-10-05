@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; scroll-behavior: smooth;}
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
 body {
-  font-family: Nunito Sans,sans-serif;
+  font-family: "Nunito Sans",sans-serif;
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
@@ -29,20 +29,28 @@ body {
   background-color: #36bea6!important;
 }
 
-.header {
+/*.header {
   color: #212529;
   background-color: #00a085;
   text-align: center;
-  font-size: x-large;
+  font-size: large;
   font-weight: bolder;
-}
+  height: auto;
+}*/
+
 
 .subheader {
-  background-color: #24d2b5;
-  color: #000000;
+  background-color:#fff;
+  color: #000066;
   text-align: center;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bolder;
+  height: auto;
+  /*border-bottom: .5px solid #888888;*/
+}
+
+.home-subheader{
+  background-color:  #20aee3;
 }
 
 .badge-info {
@@ -63,23 +71,82 @@ body {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.5rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn-info {
   color: #fff;
   background-color: #20aee3;
-  border-color: #20aee3;
+  /*border-color: #20aee3;*/
 }
 
+.btn-info:hover{
+  color: #fff;
+  background-color: #26b8ed;
+}
+
+.btn-home{
+  text-transform: uppercase;
+  font-size: .75rem;
+}
 
 .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
   background-color: #20aee3;
   color: #fff;
+}
+
+.info{
+  padding-top: .75rem;
+  font-size: 1rem;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section div, .personal div{
+  align-self: center;
+}
+
+.personal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+}
+
+.question{
+  box-shadow: 5px 10px 20px #aaaaaa;
+  width: 500px;
+  padding: 1rem;  
+  margin: 2rem;
+}
+
+.personalQ{
+  width: 400px;
+  box-shadow: 5px 10px 20px #d6dce0;
+  padding: .75rem;
+  margin: 1rem;
+}
+
+.mat-form.field[type=text]:focus{
+  width: 400px;
+}
+
+.question label{
+  font-size: .875rem;
+}
+
+
+.logo{
+  height: 30px;
+  float: left;
 }
 
 

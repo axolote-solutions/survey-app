@@ -1,23 +1,27 @@
-<div ngModelGroup="{{modelGroupName}}">
+<div ngModelGroup="{{modelGroupName}}" class="personal">
 
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-        <mat-form-field fxFlex="45">
+    <div class="personalQ" > <!--fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px"-->
+        <mat-form-field fxFlex="100">
             <input matInput placeholder="Nombres" name="firstName" required ngModel >
         </mat-form-field>
-        <mat-form-field fxFlex="45">
+    </div>
+    <div class="personalQ" >
+        <mat-form-field fxFlex="100">
             <input matInput placeholder="Apellidos" name="lastName" required ngModel >
         </mat-form-field>
     </div>
 
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-        <mat-form-field fxFlex="20">
+    <div class="personalQ" >  <!--fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px"-->
+        <mat-form-field fxFlex="50">
             <mat-label>Sexo </mat-label>
             <mat-select name="gender" required ngModel>
                 <mat-option value="Female">Femenino</mat-option>
                 <mat-option value="Male">Masculino</mat-option>
             </mat-select>
         </mat-form-field>
-        <mat-form-field fxFlex="20">
+    </div>
+    <div class="personalQ" >
+        <mat-form-field fxFlex="50">
             <mat-label>Edad</mat-label>
             <mat-select name="age" required ngModel>
                 <mat-option value="18">18</mat-option>
@@ -41,8 +45,8 @@
 
     </div>
 
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-        <mat-form-field fxFlex="20">
+    <div class="personalQ" > <!--fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px"-->
+        <mat-form-field fxFlex="50">
             <mat-label>Area </mat-label>
             <mat-select name="area" required ngModel>
                 <mat-option value="finance">Finanzas</mat-option>
@@ -56,7 +60,9 @@
                 <mat-option value="other">Otro</mat-option>
             </mat-select>
         </mat-form-field>
-        <mat-form-field fxFlex="20">
+    </div>
+    <div class="personalQ" >
+        <mat-form-field fxFlex="50">
             <mat-label>Nivel Jerarquico</mat-label>
             <mat-select name="hierarchy" required ngModel>
                 <mat-option value="comite">Comité Directivo</mat-option>
@@ -70,17 +76,24 @@
 
     </div>
 
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
-        <mat-form-field fxFlex="45">
+    <div class="personalQ" > <!--fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px"-->
+        <mat-form-field fxFlex="100">
             <input matInput placeholder="Correo electrónico institucional" name="workEmail" required ngModel >
         </mat-form-field>
-        <mat-form-field fxFlex="45">
+    </div>
+    <div class="personalQ" >
+        <mat-form-field fxFlex="100">
             <input matInput placeholder="Correo electrónico personal" name="personalEmail" required ngModel >
         </mat-form-field>
     </div>
 
     <div>
-        <button class="btn btn-info" mat-button matStepperNext>Next</button>
+        <button class="btn btn-info" mat-button matStepperNext>
+            <span class="material-icons">
+                arrow_forward_ios
+            </span>
+        </button>
     </div>
+    
 
 </div>
