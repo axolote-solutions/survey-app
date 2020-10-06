@@ -1,18 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; scroll-behavior: smooth;}
+html, body { height: 100%; scroll-behavior: smooth; }
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
 body {
   font-family: "Nunito Sans",sans-serif;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-    background-color: #eef5f9;
-    margin: 0;
-    overflow-x: hidden;
-    color: #3e5569;
-    background: #eef5f9;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  overflow-x: hidden;
+  color: #3e5569;
 }
 
 .example-radio-group {
@@ -49,16 +47,29 @@ body {
   /*border-bottom: .5px solid #888888;*/
 }
 
+.navbar{
+  overflow: auto;
+}
+
 .title{
   font-weight: bold;
   font-size: x-large;
   text-align: center;
   background-color: #20aee3;
   color:#fff;
+  padding-top: 5px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  transition: background-color 0.15s ease-in-out, letter-spacing 0.15s ease-in-out;
+}
+
+.title:hover{
+  background-color: #34c3f7;
+  letter-spacing: 3px;
 }
 
 .home-subheader{
-  background-color:  #20aee3;
+  background-color:  #34c3f7;
 }
 
 .badge-info {
@@ -94,7 +105,7 @@ body {
 
 .btn-info:hover{
   color: #fff;
-  background-color: #26b8ed;
+  background-color: #34c3f7;
 }
 
 .btn-home{
@@ -128,13 +139,19 @@ body {
 }
 
 .mat-card-title{
-  background-color: #20aee3
+  background-color: #20aee3;
 }
 
 .section{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section:not(.question), .personal:not(.personalQ){
+  background-color: #fafafa;
+  margin: auto;
+  padding: 1rem;
 }
 
 .section div, .personal div{
@@ -162,8 +179,22 @@ body {
   margin: 1rem;
 }
 
-.question label{
+.labelQ{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.number{
   font-size: .875rem;
+  font-weight: bolde;
+  color: #fff;
+  background-color: #20aee3;
+  font-weight: normal;
+  padding: 3px 6px 3px 7px;
+  margin: 2px;
+  border-radius: 50%;
 }
 
 .logo{
