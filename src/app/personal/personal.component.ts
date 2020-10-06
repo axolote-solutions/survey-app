@@ -20,4 +20,5 @@ export class PersonalComponent implements OnInit {
 
   @Input() modelGroupName: string;
 
+
 }
