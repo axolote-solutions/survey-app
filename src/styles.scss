@@ -49,6 +49,14 @@ body {
   /*border-bottom: .5px solid #888888;*/
 }
 
+.title{
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  background-color: #20aee3;
+  color:#fff;
+}
+
 .home-subheader{
   background-color:  #20aee3;
 }
@@ -94,6 +102,21 @@ body {
   font-size: .75rem;
 }
 
+.btns{
+  position: relative;
+}
+
+.btn-left{
+  position: absolute;
+  left: -130%;
+  top: 5px;
+}
+
+.btn-right{
+  position: absolute;
+  right: -130%;
+  top: 5px;
+}
 .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
   background-color: #20aee3;
   color: #fff;
@@ -102,6 +125,10 @@ body {
 .info{
   padding-top: .75rem;
   font-size: 1rem;
+}
+
+.mat-card-title{
+  background-color: #20aee3
 }
 
 .section{
@@ -135,14 +162,9 @@ body {
   margin: 1rem;
 }
 
-.mat-form.field[type=text]:focus{
-  width: 400px;
-}
-
 .question label{
   font-size: .875rem;
 }
-
 
 .logo{
   height: 30px;
