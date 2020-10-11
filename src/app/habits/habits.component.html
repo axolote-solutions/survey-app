@@ -1,7 +1,16 @@
 <div ngModelGroup="{{modelGroupName}}" class="section">
 
+    <div>
+        <mat-card class="title">
+            Hábitos de riesgo para COVID-19
+        </mat-card>
+    </div>
+
     <div class="question" fxLayout="column" fxLayoutGap="20px">
-        <label>¿Actualmente uso cubre bocas o caretas?</label>
+        <label  class="labelQ"> 
+            <span class="number">1</span>
+            ¿Actualmente uso cubre bocas o caretas?
+        </label>
         <mat-radio-group class="example-radio-group" name="facemask" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let facemask of facemasks" [value]="facemask">
                 {{facemask}}
@@ -11,7 +20,10 @@
     </div>
 
     <div class="question" fxLayout="column" fxLayoutGap="20px">
-        <label>¿Mantienes la sana distancia en esta cuarentena? (1.5 metros)</label>
+        <label class="labelQ"> 
+            <span class="number">2</span>
+            ¿Mantienes la sana distancia en esta cuarentena? (1.5 metros)
+        </label>
         <mat-radio-group class="example-radio-group" name="distance" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let frecuency of times" [value]="frecuency">
                 {{frecuency}}
@@ -21,7 +33,9 @@
     </div>
 
     <div class="question" fxLayout="column" fxLayoutGap="20px">
-        <label>¿Desinfectas los víveres y/o comida a domicilio cuando llegan a tu casa?</label>
+        <label class="labelQ"> 
+            <span class="number">3</span>
+            ¿Desinfectas los víveres y/o comida a domicilio cuando llegan a tu casa?</label>
         <mat-radio-group class="example-radio-group" name="disinfect" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let frecuency of times" [value]="frecuency">
                 {{frecuency}}
@@ -31,7 +45,10 @@
     </div>
 
     <div class="question" fxLayout="column" fxLayoutGap="20px">
-        <label>¿Tienes tapetes sanitizantes y/o gel en casa?</label>
+        <label  class="labelQ"> 
+            <span class="number">4</span>
+            ¿Tienes tapetes sanitizantes y/o gel en casa?
+        </label>
         <mat-radio-group class="example-radio-group" name="tapete" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let tapete of tapetes" [value]="tapete">
                 {{tapete}}
@@ -41,7 +58,10 @@
     </div>
     
     <div class="question" fxLayout="column" fxLayoutGap="20px">
-        <label>¿Asistes a reuniones de más de 5 personas con o sin cubre bocas y/o careta facial, en la cuarentena?</label>
+        <label  class="labelQ"> 
+            <span class="number">5</span>
+            ¿Asistes a reuniones de más de 5 personas con o sin cubre bocas y/o careta facial, en la cuarentena?
+        </label>
         <mat-radio-group class="example-radio-group" name="reunion" (change)="handleReunion($event.value)" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let reunion of reuniones" [value]="reunion">
                 {{reunion}}
@@ -51,7 +71,10 @@
     </div>
     
     <div class="question" fxLayout="column" fxLayoutGap="20px" *ngIf="selectedReunion != 'Nunca'" fxLayoutGap="0px">
-        <label>¿Cuando asistes a las reuniones de más de 2 veces por semana (4) de 5 personas, en la cuarentena, usas gel y/o guantes?</label>
+        <label  class="labelQ"> 
+            <span class="number">6</span>
+            ¿Cuando asistes a las reuniones de más de 2 veces por semana (4) de 5 personas, en la cuarentena, usas gel y/o guantes?
+        </label>
         <mat-radio-group class="example-radio-group" name="asistencia" required ngModel>
             <mat-radio-button class="example-radio-button" *ngFor="let asistencia of asistencias" [value]="asistencia">
                 {{asistencia}}
@@ -60,14 +83,14 @@
         
     </div>
 
-    <div>
-        <button class="btn btn-info" mat-button matStepperPrevious>
+    <div class="btns">
+        <button class="btn btn-info btn-left" mat-button matStepperPrevious>
             <span class="material-icons">
                 arrow_back_ios
             </span>
         </button>
         &nbsp;&nbsp;&nbsp;
-        <button class="btn btn-info" mat-button matStepperNext>
+        <button class="btn btn-info btn-right" mat-button matStepperNext>
             <span class="material-icons">
                 arrow_forward_ios
             </span>

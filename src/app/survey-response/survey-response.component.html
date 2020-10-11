@@ -1,37 +1,39 @@
-<div fxLayout="column wrap" fxLayout.sm="column wrap" class="navbar">
-    
-<mat-card class="subheader"> <!--fxFlex.gt-sm= "15" fxFlex.sm= "1"-->
-    <img [src]="logoImg" class="logo">
-    Por tu corazón 
-</mat-card>
-<mat-card fxFlex class="bar-progress">
-    
-    <mat-card-content>
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-            <mat-horizontal-stepper linear #stepper labelPosition="top">
-                <mat-step #personal="ngModelGroup" ngModelGroup="personal" [completed]="personal.valid">
-                    <ng-template matStepLabel>Personal</ng-template>
-                    <app-personal modelGroupName="contact"></app-personal>
-                </mat-step>
-                <mat-step #health="ngModelGroup" ngModelGroup="health" [completed]="health.valid">
-                    <ng-template matStepLabel>GAD</ng-template>
-                    <app-gad modelGroupName="gad"></app-gad>
-                </mat-step>
-                <mat-step #habits="ngModelGroup" ngModelGroup="habits" [completed]="habits.valid">
-                    <ng-template matStepLabel>Habitos</ng-template>
-                    <app-habits modelGroupName="habitos"></app-habits>
-                </mat-step>
-                <mat-step>
-                    <ng-template matStepLabel>Done</ng-template>
-                    <p>Thanks for using the survey!</p>
-                    <div>
-                      <button class="btn btn-info" mat-raised-button type="button" (click)="onClick(f)" [routerLink]="['/home']" routerLinkActive="active">Finalizar</button>
-                    </div>
-                  </mat-step>
-            </mat-horizontal-stepper>
-        </form>
-        <!-- <pre>{{ f.value | json }}</pre> -->
-    </mat-card-content>
+<div class="app">
+    <div fxLayout="column wrap" fxLayout.sm="column wrap" class="navbar">
+        
+    <mat-card class="subheader"> <!--fxFlex.gt-sm= "15" fxFlex.sm= "1"-->
+        <img [src]="logoImg" class="logo">
+        Por tu corazón 
+    </mat-card>
+    <mat-card fxFlex class="bar-progress">
+        
+        <mat-card-content>
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <mat-horizontal-stepper linear #stepper labelPosition="top">
+                    <mat-step #personal="ngModelGroup" ngModelGroup="personal" [completed]="personal.valid">
+                        <ng-template matStepLabel>Personal</ng-template>
+                        <app-personal modelGroupName="contact"></app-personal>
+                    </mat-step>
+                    <mat-step #health="ngModelGroup" ngModelGroup="health" [completed]="health.valid">
+                        <ng-template matStepLabel>GAD</ng-template>
+                        <app-gad modelGroupName="gad"></app-gad>
+                    </mat-step>
+                    <mat-step #habits="ngModelGroup" ngModelGroup="habits" [completed]="habits.valid">
+                        <ng-template matStepLabel>Habitos</ng-template>
+                        <app-habits modelGroupName="habitos"></app-habits>
+                    </mat-step>
+                    <mat-step>
+                        <ng-template matStepLabel>Done</ng-template>
+                        <p>Thanks for using the survey!</p>
+                        <div>
+                        <button class="btn btn-info" mat-raised-button type="button" (click)="onClick(f)" [routerLink]="['/home']" routerLinkActive="active">Finalizar</button>
+                        </div>
+                    </mat-step>
+                </mat-horizontal-stepper>
+            </form>
+            <!-- <pre>{{ f.value | json }}</pre> -->
+        </mat-card-content>
 
-</mat-card>
+    </mat-card>
+    </div>
 </div>
